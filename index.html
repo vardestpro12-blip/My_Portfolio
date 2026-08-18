@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+       SEO META TAGS
+       Update the title/description/keywords below to match your
+       final copy. These help search engines and social previews.
+  ============================================================ -->
+  <title>Vardest Pro | Graphic Designer & Brand Strategist in Cameroon</title>
+  <meta name="description" content="Vardest Pro (Yimnai Vardest) is a graphic designer and brand strategist helping businesses, ministries and entrepreneurs communicate through strategic, modern, impactful design.">
+  <meta name="keywords" content="graphic designer, brand designer, Vardest Pro, VP Designs, Cameroon designer, flyer design, brand identity, print design">
+  <meta name="author" content="Yimnai Vardest — Vardest Pro">
+
+  <!-- Open Graph tags: control how the site looks when shared on social media -->
+  <meta property="og:title" content="Vardest Pro | Designing Brands That Get Attention">
+  <meta property="og:description" content="Strategic, modern and impactful graphic design for businesses, ministries and entrepreneurs.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/og-cover.jpg">
+
+  <!-- Favicon: drop your icon files into /icons and update the paths below -->
+  <link rel="icon" type="image/png" href="icons/favicon.png">
+
+  <!-- ============================================================
+       FONTS
+       Sora = headings, Inter = body text (both loaded from Google Fonts).
+       Coolvetica (logo font) is NOT on Google Fonts — you must supply
+       your own licensed font file. Drop it in /fonts and it will be
+       picked up automatically via the @font-face rule in style.css.
+  ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome — used for all icons across the site (social links, service icons, etc.) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard/screen-reader users: jumps straight to main content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ============================================================
+       LOADING SCREEN
+       Shown for a brief moment on first load, then faded out by
+       script.js once the page has finished loading.
+  ============================================================ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-logo">V<span>P</span></div>
+    <div class="preloader-bar"><span></span></div>
+  </div>
+
+  <!-- Scroll progress bar: fills as the user scrolls down the page -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============================================================
+       STICKY NAVIGATION
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+
+      <a href="#home" class="logo">Vardest<span>Pro</span></a>
+
+      <!-- Main nav links — hidden on mobile behind the hamburger menu -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active-link">Homes</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <!-- Dark mode toggle: state is saved to localStorage by script.js -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Hire Us</a>
+
+        <!-- Hamburger button for mobile menu -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section class="hero" id="home">
+      <!-- Decorative floating blobs — purely visual, hidden from screen readers -->
+      <div class="blob blob-green" aria-hidden="true"></div>
+      <div class="blob blob-yellow" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+
+        <div class="hero-content" data-reveal>
+          <span class="badge">Graphic Designer <i class="fa-solid fa-circle badge-dot"></i> Brand Strategist</span>
+
+          <h1 class="hero-heading">
+            Designing Brands That
+            <!-- id used by the optional typing effect in script.js -->
+            <span class="text-accent" id="typedText">Get Attention</span>
+          </h1>
+
+          <p class="hero-sub">
+            I'm Yimnai Vardest, professionally known as Vardest Pro. I help businesses,
+            ministries, organizations and entrepreneurs communicate through strategic,
+            modern and impactful graphic design — every project built with creativity,
+            clarity and purpose to help brands stand out.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Hire Me</a>
+          </div>
+
+          <!-- Animated counters: script.js reads data-target and counts up when scrolled into view -->
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="stat-number" data-target="150">0</span><span class="stat-plus">+</span>
+              <p>Projects</p>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+              <p>Happy Clients</p>
+            </div>
+            <div class="hero-stat">
+              <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+              <p>Years Experience</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual side of the hero: replace with a real photo/mockup in /images -->
+        <div class="hero-visual" data-reveal data-reveal-delay="1">
+          <div class="hero-visual-card glass">
+            <div class="hero-visual-frame">
+              <!-- Swap this placeholder for: <img src="images/profile.jpg" alt="Yimnai Vardest"> -->
+               <img src="Mesd.jpg" alt="Yimnai Vardest">
+              <span class="hero-visual-initials">YV</span>
+            </div>
+            <div class="hero-visual-tag hero-visual-tag--1"><i class="fa-solid fa-palette"></i> Brand Strategist</div>
+            <div class="hero-visual-tag hero-visual-tag--2"><i class="fa-solid fa-bolt"></i> Graphic Designer</div>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         ABOUT SECTION
+    ============================================================ -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-visual" data-reveal>
+          <div class="about-photo-frame glass">
+            <!-- Swap for a real photo: <img src="images/about-photo.jpg" alt="Yimnai Vardest at work"> -->
+             <img src="Meagain.jpg" alt="My picture">
+            <span class="hero-visual-initials">YV</span>
+          </div>
+          <div class="about-philosophy-card glass">
+            <p>Simple</p>
+            <p>Strategic</p>
+            <p>Impactful</p>
+          </div>
+        </div>
+
+        <div class="about-content" data-reveal data-reveal-delay="1">
+          <span class="eyebrow">About Me</span>
+          <h2 class="section-heading">Who is Vardest Pro?</h2>
+
+          <p class="about-bio">
+            Vardest Pro is the creative mind behind <span><b class="Justthis">VP DESIGNS</b></span>, a
+            brand designer focused on creating clear, strategic
+             and <b>result-oriented visuals</b> that communicate value and purpose.
+            He has worked with brands, ministries, and coaches to
+            design promotional materials that do more than just
+            look good; they get attention and drive action.
+            His design philosophy is simple: grab attention fast,
+            communicate clearly, and guide the viewer eyes toward
+            the message that matters most.
+            Vardest Pro specializes in designing purposeful visuals
+            for brands, businesses, and events that want effective
+            communication and quick results. His work emphasizes
+            clean hierarchy, strong headlines, and layouts that
+            naturally lead the eye.
+            Simple, Strategic and Impactful; that's how he works
+            
+            
+            
+          </p>
+
+          <!-- Highlight cards summarizing the approach — edit freely -->
+          <div class="highlight-cards">
+            <div class="highlight-card">
+              <i class="fa-solid fa-lightbulb"></i>
+              <div>
+                <h3>Strategic Thinking</h3>
+                <p>Every design decision is tied back to what the brand needs to communicate.</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <i class="fa-solid fa-pen-nib"></i>
+              <div>
+                <h3>Creative Craft</h3>
+                <p>Clean, modern visuals with an eye for detail across print and digital.</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <i class="fa-solid fa-handshake"></i>
+              <div>
+                <h3>Reliable Delivery</h3>
+                <p>Clear communication and on-time delivery, from first brief to final file.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICES SECTION
+    ============================================================ -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">What I Do</span>
+          <h2 class="section-heading">Services</h2>
+          <p class="section-desc">Design support across the formats brands actually need, from a single flyer to a full identity system.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <!-- Each service card — edit the icon, title and description as needed -->
+          <article class="service-card glass" data-reveal>
+            <div class="service-icon"><i class="fa-solid fa-file-lines"></i></div>
+            <h3>Flyer Design</h3>
+            <p>Eye-catching flyers for events, churches, promotions, campaigns and more</p>
+          </article>
+
+          <article class="service-card glass" data-reveal data-reveal-delay="1">
+            <div class="service-icon"><i class="fa-brands fa-instagram"></i></div>
+            <h3>Social Media Design</h3>
+            <p>Cohesive post templates and content kits that keep a feed on-brand.</p>
+          </article>
+
+          <article class="service-card glass" data-reveal data-reveal-delay="2">
+            <div class="service-icon"><i class="fa-solid fa-swatchbook"></i></div>
+            <h3>Brand Identity</h3>
+            <p>Logos, color systems and guidelines that give a brand a consistent face.</p>
+          </article>
+
+          <article class="service-card glass" data-reveal>
+            <div class="service-icon"><i class="fa-solid fa-print"></i></div>
+            <h3>Designing and Printing</h3>
+            <p>Business cards, letterheads, banners, rollups, posters etc built print-ready.</p>
+          </article>
+
+          <article class="service-card glass" data-reveal data-reveal-delay="1">
+            <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>Photo Retouching</h3>
+            <p>Clean, natural photo manipulation and enhancement work.</p>
+          </article>
+
+          <article class="service-card glass" data-reveal data-reveal-delay="2">
+            <div class="service-icon"><i class="fa-solid fa-display"></i></div>
+            <h3>UI Design</h3>
+            <p>Simple, usable interface layouts for websites and digital products.</p>
+          </article>
+
+          <article class="service-card glass" data-reveal data-reveal-delay="2">
+            <div class="service-icon"><i class="fa-solid fa-display"></i></div>
+            <h3>Website Building</h3>
+            <p>Simple, usable interface layouts for websites and digital products.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS SECTION
+    ============================================================ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">Toolset</span>
+          <h2 class="section-heading">Skills</h2>
+          <p class="section-desc">Tools used daily to take a project from concept to finished file.</p>
+        </div>
+
+        <!-- Skill bars: script.js animates the fill width to data-percent when scrolled into view -->
+        <div class="skills-grid" data-reveal>
+          <div class="skill-item">
+            <div class="skill-label"><span>Photoshop</span><span class="skill-percent">95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Illustrator</span><span class="skill-percent">93%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="93"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>InDesign</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Figma</span><span class="skill-percent">88%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="88"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>HTML5</span><span class="skill-percent">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>CSS3</span><span class="skill-percent">72%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="72"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Canva</span><span class="skill-percent">95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>AI Prompting</span><span class="skill-percent">90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-percent="90"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EXPERIENCE TIMELINE
+    ============================================================ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">Journey</span>
+          <h2 class="section-heading">Experience</h2>
+          <p class="section-desc">How Vardest Pro came to be — edit the years and copy to match your real story.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-year">2024</span>
+              <h3>Started the Journey</h3>
+              <p>Began learning graphic design, taking on early branding and marketing projects.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal data-reveal-delay="1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-year">2024</span>
+              <h3>Branding &amp; Marketing Work</h3>
+              <p>Grew a track record designing brand and marketing materials for local clients.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal data-reveal-delay="2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-year">2025</span>
+              <h3>Clients Across Cameroon</h3>
+              <p>Expanded to serve businesses, churches and organizations nationwide.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-year">2025</span>
+              <h3>Developed VP Designs</h3>
+              <p>Formalized the practice under the VP Designs brand, with a repeatable process.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal data-reveal-delay="1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-year">Now</span>
+              <h3>Advanced Graphic Designer</h3>
+              <p>Delivering strategic, premium design work as Vardest Pro.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ACHIEVEMENTS SECTION
+    ============================================================ -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="grid grid-4 achievements-grid">
+          <div class="achievement-card" data-reveal>
+            <i class="fa-solid fa-diagram-project"></i>
+            <span class="stat-number" data-target="150">0</span><span class="stat-plus">+</span>
+            <p>Projects</p>
+          </div>
+          <div class="achievement-card" data-reveal data-reveal-delay="1">
+            <i class="fa-solid fa-users"></i>
+            <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+            <p>Happy Clients</p>
+          </div>
+          <div class="achievement-card" data-reveal data-reveal-delay="2">
+            <i class="fa-solid fa-hourglass-half"></i>
+            <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+            <p>Years Experience</p>
+          </div>
+          <div class="achievement-card" data-reveal data-reveal-delay="3">
+            <i class="fa-solid fa-trophy"></i>
+            <p class="achievement-text">Award Winning<br>Designer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS SECTION — masonry grid with category filters
+    ============================================================ -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">Portfolio</span>
+          <h2 class="section-heading">Projects</h2>
+          <p class="section-desc">A selection of recent work. Replace the placeholder thumbnails in /images with real project shots.</p>
+        </div>
+
+        <!-- Filter buttons: script.js toggles .active and shows/hides matching .project-card items -->
+        <div class="project-filters" data-reveal>
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="flyers">Flyers</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="social">Social Media</button>
+          <button class="filter-btn" data-filter="print">Print</button>
+          <button class="filter-btn" data-filter="retouch">Retouching</button>
+        </div>
+
+        <!-- Project grid — duplicate a .project-card block to add more work, and set data-category to match a filter button -->
+        <div class="project-grid" id="projectGrid">
+
+          <article class="project-card" data-category="flyers" data-reveal>
+            <div class="project-thumb thumb-1"><i class="fa-solid fa-image"></i></div>
+            <div class="project-info">
+              <span class="project-tag">Flyers</span>
+              <h3>Church Flyer Design</h3>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="flyers" data-reveal data-reveal-delay="1">
+            <div class="project-thumb thumb-2"><i class="fa-solid fa-image"></i></div>
+            <div class="project-info">
+              <span class="project-tag">Flyers</span>
+              <h3>Corporate Flyer Design</h3>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="branding" data-reveal data-reveal-delay="2">
+            <div class="project-thumb thumb-3"><i class="fa-solid fa-image"></i></div>
+            <div class="project-info">
+              <span class="project-tag">Branding</span>
+              <h3>Logo &amp; Brand Identity</h3>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="branding" data-reveal>
+            <div class="project-thumb thumb-4"><i class="fa-solid fa-image"></i></div>
+            <div class="project-info">
+              <span class="project-tag">Branding</span>
+              <h3>Business Card Suite</h3>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="print" data-reveal data-reveal-delay="1">
+            <div class="project-thumb thumb-5"><i class="fa-solid fa-image"></i></div>
+            <div class="project-info">
+              <span class="project-tag">Print</span>
+              <h3>Letterhead Design</h3>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="print" data-reveal data-reveal-delay="2">
+            <div class="project-thumb thumb-6"><i class="fa-solid fa-image"></i></div>
+            <div class="project-info">
+              <span class="project-tag">Print</span>
+              <h3>Roll-Up Banner</h3>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="social" data-reveal>
+            <div class="project-thumb thumb-7"><i class="fa-solid fa-image"></i></div>
+            <div class="project-info">
+              <span class="project-tag">Social Media</span>
+              <h3>Social Media Kit</h3>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="print" data-reveal data-reveal-delay="1">
+            <div class="project-thumb thumb-8"><i class="fa-solid fa-image"></i></div>
+            <div class="project-info">
+              <span class="project-tag">Print</span>
+              <h3>Book Cover Design</h3>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="retouch" data-reveal data-reveal-delay="2">
+            <div class="project-thumb thumb-9"><i class="fa-solid fa-image"></i></div>
+            <div class="project-info">
+              <span class="project-tag">Retouching</span>
+              <h3>Photo Manipulation</h3>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="print" data-reveal>
+            <div class="project-thumb thumb-10"><i class="fa-solid fa-image"></i></div>
+            <div class="project-info">
+              <span class="project-tag">Print</span>
+              <h3>Wedding Invitation Design</h3>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHY CHOOSE ME SECTION
+    ============================================================ -->
+    <section class="section" id="why-choose-me">
+      <div class="container">
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">The Difference</span>
+          <h2 class="section-heading">Why Choose Me</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="why-card glass" data-reveal>
+            <i class="fa-solid fa-brain"></i>
+            <h3>Creative Thinking</h3>
+            <p>Fresh concepts tailored to the brand, not recycled templates.</p>
+          </div>
+          <div class="why-card glass" data-reveal data-reveal-delay="1">
+            <i class="fa-solid fa-comments"></i>
+            <h3>Professional Communication</h3>
+            <p>Clear updates and easy collaboration from brief to delivery.</p>
+          </div>
+          <div class="why-card glass" data-reveal data-reveal-delay="2">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Fast Delivery</h3>
+            <p>Efficient turnaround without cutting corners on quality.</p>
+          </div>
+          <div class="why-card glass" data-reveal>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <h3>Attention to Detail</h3>
+            <p>Every alignment, color and spacing choice is intentional.</p>
+          </div>
+          <div class="why-card glass" data-reveal data-reveal-delay="1">
+            <i class="fa-solid fa-chess"></i>
+            <h3>Brand Strategy</h3>
+            <p>Design decisions grounded in what the brand needs to say.</p>
+          </div>
+          <div class="why-card glass" data-reveal data-reveal-delay="2">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <h3>Modern Design Trends</h3>
+            <p>Contemporary visuals that keep a brand feeling current.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TESTIMONIALS SECTION — simple JS-driven slider
+    ============================================================ -->
+    <section class="section section-alt" id="testimonials">
+      <div class="container">
+        <div class="section-intro" data-reveal>
+          <span class="eyebrow">Kind Words</span>
+          <h2 class="section-heading">Testimonials</h2>
+          <p class="section-desc">Sample layout — replace with real client quotes as they come in.</p>
+        </div>
+
+        <div class="testimonial-slider" data-reveal>
+          <div class="testimonial-track" id="testimonialTrack">
+
+            <div class="testimonial-card glass">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p>"Working with Vardest Pro was smooth from start to finish. The brand identity captured exactly what we were going for, and the turnaround was quick."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">CN</div>
+                <div>
+                  <h4>Client Name</h4>
+                  <span>Business Owner</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card glass">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p>"Our church flyers and event banners always come out clean and on-brand. Communication was clear the whole way through."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">CN</div>
+                <div>
+                  <h4>Client Name</h4>
+                  <span>Ministry Coordinator</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card glass">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p>"Professional, detail-oriented and easy to work with. Our new business cards and letterhead look exactly the way we imagined."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">CN</div>
+                <div>
+                  <h4>Client Name</h4>
+                  <span>Founder</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="testimonial-controls">
+            <button class="testimonial-btn" id="testimonialPrev" aria-label="Previous testimonial"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="testimonial-dots" id="testimonialDots"></div>
+            <button class="testimonial-btn" id="testimonialNext" aria-label="Next testimonial"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CALL TO ACTION SECTION
+    ============================================================ -->
+    <section class="cta-section">
+      <div class="container cta-inner" data-reveal>
+        <h2>Let's Build Something Amazing Together.</h2>
+        <p>Have a project in mind? Let's talk about how design can help your brand stand out.</p>
+        <a href="#contact" class="btn btn-secondary">Start a Project</a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+    ============================================================ -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-info" data-reveal>
+          <span class="eyebrow">Get In Touch</span>
+          <h2 class="section-heading">Contact</h2>
+          <p class="section-desc">Reach out directly, or use the form — every message gets a reply.</p>
+
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+237658267779">+237 658 267 779</a></li>
+            <!-- Replace with your real email address -->
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:your@email.com">your@email.com</a></li>
+            <li><i class="fa-solid fa-location-dot"></i> Cameroon</li>
+          </ul>
+
+          <!-- Social links — update each href to your real profile URL -->
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+            <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- ============================================================
+             CONTACT FORM
+             NOTE: plain HTML/CSS/JS cannot send an email by itself.
+             script.js currently just validates the fields and shows a
+             success message. To make this form actually deliver
+             messages to your inbox, connect it to a form backend such
+             as Formspree, Web3Forms or EmailJS — that usually means
+             setting the <form> action/endpoint and following that
+             service's setup steps.
+        ============================================================ -->
+        <form class="contact-form glass" id="contactForm" data-reveal data-reveal-delay="1" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required>
+              <span class="form-error" id="emailError"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+            <span class="form-error" id="subjectError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            <span class="btn-text">Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+
+          <!-- Success message shown after a valid submission -->
+          <p class="form-success" id="formSuccess" role="status">Thanks! Your message has been noted — I'll get back to you shortly.</p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo">Vardest<span>Pro</span></a>
+        <p>Designing brands that get attention — one project at a time.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="social-links footer-social">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+        <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Vardest Pro / VP Designs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Your script — placed at the end of body so the DOM is ready before it runs -->
+  <script src="script.js"></script>
+</body>
+</html>
